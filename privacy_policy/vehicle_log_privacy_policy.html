@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Vehicle Log: Fuel &amp; Service</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 44rem; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  h1 { font-size: 1.75rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .updated { opacity: .7; font-size: .9rem; }
+  code { font-size: .9em; }
+  ul { padding-left: 1.25rem; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — Vehicle Log: Fuel &amp; Service</h1>
+<p class="updated">Last updated: 11 August 2026</p>
+
+<p>Vehicle Log (“the app”) is developed by KTN Apps (“we”, “us”). This policy explains
+what the app does with your information. The short version: the app has no servers,
+no accounts and no analytics. Your data stays on your device and, if you turn on
+iCloud sync, in your own private Apple iCloud account.</p>
+
+<h2>1. Data we collect</h2>
+<p><strong>We collect nothing.</strong> We operate no backend service, no analytics SDK
+and no advertising SDK. No data is transmitted to us or to any third party for our
+benefit. We cannot see your vehicles, your fuel logs, your photos or your usage of
+the app.</p>
+<p>The app does not track you across apps or websites, and contains no tracking
+domains. This is declared in the app’s Apple privacy manifest
+(<code>PrivacyInfo.xcprivacy</code>) as <em>Data Not Collected</em> and
+<em>Tracking: No</em>.</p>
+
+<h2>2. Data you create, and where it lives</h2>
+<p>Everything you enter is stored <strong>locally on your device</strong> using Apple’s
+SwiftData framework. This includes:</p>
+<ul>
+  <li>Vehicles (name, make, model, year, plate/VIN if you enter one, odometer, units, photos)</li>
+  <li>Fuel entries (date, odometer, volume, price, station, notes)</li>
+  <li>Service, expense and income records, including categories and notes</li>
+  <li>Trips</li>
+  <li>Documents (title, expiry date, attached images or files you add)</li>
+  <li>Reminders and their schedules</li>
+  <li>App preferences (units, currency, theme, notification and lock settings), stored in <code>UserDefaults</code></li>
+  <li>A cached summary snapshot in a shared app group so the Home Screen and Lock Screen
+      widgets can display data. This snapshot is encrypted with AES-GCM using a key held
+      in the device Keychain (accessible only after first unlock, on this device only).</li>
+</ul>
+<p>Photos and file attachments you add are copied into the app’s private container. You
+choose individual items through the system photo/file picker; the app does not read
+your photo library beyond what you explicitly pick.</p>
+
+<h2>3. iCloud sync (optional)</h2>
+<p>If you enable iCloud sync, your app data is synchronised through <strong>CloudKit</strong>
+into your own private iCloud database (container
+<code>iCloud.com.ktnapps.vehicle-management</code>). That data is held by Apple under your
+Apple Account and governed by Apple’s privacy policy. We have no access to it and receive
+no copy. Turning sync off stops further synchronisation; data already in iCloud can be
+removed via iOS Settings → your Apple Account → iCloud → Manage Account Storage.</p>
+
+<h2>4. Backup and export</h2>
+<p>You can export a backup (JSON, optionally including photos) or CSV files, and you can
+import data from other apps’ CSV exports (for example Fuelly or Drivvo). Exports are
+written wherever you send them — Files, iCloud Drive, AirDrop, another app. Once a file
+leaves the app, its handling is up to you and the destination service. Encrypted backups
+are protected with a passphrase you choose; <strong>we cannot recover a lost
+passphrase.</strong></p>
+
+<h2>5. Notifications</h2>
+<p>Reminder notifications are scheduled and delivered <strong>locally</strong> on your
+device via the iOS notification system. There is no push server. Notification permission
+is requested only when you enable reminders, and can be revoked at any time in iOS
+Settings.</p>
+
+<h2>6. Face ID / Touch ID</h2>
+<p>If you enable app lock, authentication is performed by iOS through
+<code>LocalAuthentication</code>. Biometric data never leaves Apple’s Secure Enclave and
+is never seen by the app or by us.</p>
+
+<h2>7. Third parties</h2>
+<p>The app embeds no third-party analytics, attribution, advertising or crash-reporting
+SDKs. Two Apple services may be involved:</p>
+<ul>
+  <li><strong>Apple / CloudKit</strong> — only if you enable iCloud sync (see section 3).</li>
+  <li><strong>App Store</strong> — the app may show Apple’s standard “rate this app”
+      prompt, or open your App Store review page if you tap the link in Settings. Ratings
+      and reviews are handled entirely by Apple; we receive only the aggregate, anonymous
+      reporting Apple provides to all developers.</li>
+</ul>
+<p>Apple may also provide us with anonymous, aggregated App Store analytics (downloads,
+crashes, retention). This data is not linked to your identity and is not collected by the
+app itself.</p>
+
+<h2>8. Children</h2>
+<p>The app is not directed at children and collects no personal information from anyone,
+including children under 13 (or the equivalent minimum age in your jurisdiction).</p>
+
+<h2>9. Your rights and control</h2>
+<ul>
+  <li><strong>Access / export</strong> — use Backup or CSV export in Settings.</li>
+  <li><strong>Correction</strong> — edit or delete any record in the app.</li>
+  <li><strong>Deletion</strong> — delete individual records, or delete the app to remove
+      its local container. If iCloud sync was on, also remove the app’s iCloud data via
+      iOS Settings as described in section 3.</li>
+</ul>
+<p>Under GDPR/UK GDPR terms, we are not a controller of your app content, as we never
+receive it. For CCPA/CPRA purposes: we do not collect, sell or share personal
+information.</p>
+
+<h2>10. Security</h2>
+<p>Local data is protected by iOS app sandboxing and device encryption (which depends on
+you having a device passcode set). The widget snapshot and any encrypted backup use
+AES-GCM. No transmission of data happens outside iCloud sync and files you export
+yourself.</p>
+
+<h2>11. Changes to this policy</h2>
+<p>If this policy changes, we will update the “Last updated” date above and publish the
+revised version at the same URL. Material changes will also be noted in the app’s release
+notes.</p>
+
+<h2>12. Contact</h2>
+<p>Questions about this policy or about privacy in the app:<br>
+<strong>Email:</strong> <a href="mailto:ktnapps@gmail.com">ktnapps@gmail.com</a></p>
+
+</body>
+</html>
